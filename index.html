@@ -134,6 +134,11 @@
             background: linear-gradient(135deg, #333, #6e5494, #4078c0);
         }
         
+        /* Особый стиль для Google Sheets */
+        .google-sheets-icon {
+            background: linear-gradient(135deg, #34A853, #0F9D58, #1E8E3E);
+        }
+        
         /* Особый стиль для Figma */
         .figma-icon {
             background: linear-gradient(135deg, #F24E1E, #A259FF, #1ABCFE, #0ACF83);
@@ -174,6 +179,11 @@
         /* Особый стиль для ссылки GitHub */
         .github-link {
             background: linear-gradient(90deg, #333, #6e5494);
+        }
+        
+        /* Особый стиль для ссылки Google Sheets */
+        .google-sheets-link {
+            background: linear-gradient(90deg, #34A853, #0F9D58);
         }
         
         /* Особый стиль для ссылки Figma */
@@ -276,6 +286,7 @@
         .generator-card:nth-child(13) { animation-delay: 1.3s; }
         .generator-card:nth-child(14) { animation-delay: 1.4s; }
         .generator-card:nth-child(15) { animation-delay: 1.5s; }
+        .generator-card:nth-child(16) { animation-delay: 1.6s; }
     </style>
 </head>
 <body>
@@ -289,7 +300,7 @@
         <!-- Секция с генераторами -->
         <section class="generators-section">
             <h2 class="section-title">Коллекция генераторов</h2>
-            <div class="counter">Всего генераторов: <span>15</span></div>
+            <div class="counter">Всего генераторов: <span>16</span></div>
             
             <div class="generators-grid">
                 <!-- Генератор 1 - GitHub -->
@@ -306,7 +317,21 @@
                     <a href="https://cel909321-coder.github.io/metro/" target="_blank" class="card-link github-link">Перейти к проекту на GitHub</a>
                 </div>
                 
-                <!-- Генератор 2 - FIGMA -->
+                <!-- Генератор 2 - Google Sheets -->
+                <div class="generator-card">
+                    <div class="card-header">
+                        <div class="card-icon google-sheets-icon">
+                            <i class="fas fa-table"></i>
+                        </div>
+                        <h3 class="card-title">Google Sheets</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Мой дипломный Google Sheets документ с таблицами, графиками и аналитикой проекта.</p>
+                    </div>
+                    <a href="https://docs.google.com/spreadsheets/d/1wktvd4A3WtM7JeePFOZCJmEeG-5n0rUIzj-XD9j0vmM/edit?usp=sharing" target="_blank" class="card-link google-sheets-link">Перейти к таблице</a>
+                </div>
+                
+                <!-- Генератор 3 - FIGMA -->
                 <div class="generator-card">
                     <div class="card-header">
                         <div class="card-icon figma-icon">
@@ -320,7 +345,7 @@
                     <a href="https://www.figma.com/" target="_blank" class="card-link figma-link">Перейти к Figma</a>
                 </div>
                 
-                <!-- Генератор 3 - JSitor -->
+                <!-- Генератор 4 - JSitor -->
                 <div class="generator-card">
                     <div class="card-header">
                         <div class="card-icon jsitor-icon">
@@ -334,7 +359,7 @@
                     <a href="https://jsitor.com/" target="_blank" class="card-link jsitor-link">Перейти к JSitor</a>
                 </div>
                 
-                <!-- Генератор 4 -->
+                <!-- Генератор 5 -->
                 <div class="generator-card">
                     <div class="card-header">
                         <div class="card-icon">
@@ -348,7 +373,7 @@
                     <a href="https://coolors.co/" target="_blank" class="card-link">Перейти к генератору</a>
                 </div>
                 
-                <!-- Генератор 5 -->
+                <!-- Генератор 6 -->
                 <div class="generator-card">
                     <div class="card-header">
                         <div class="card-icon">
@@ -362,7 +387,7 @@
                     <a href="https://www.qr-code-generator.com/" target="_blank" class="card-link">Перейти к генератору</a>
                 </div>
                 
-                <!-- Генератор 6 -->
+                <!-- Генератор 7 -->
                 <div class="generator-card">
                     <div class="card-header">
                         <div class="card-icon">
@@ -376,7 +401,7 @@
                     <a href="https://www.lastpass.com/features/password-generator" target="_blank" class="card-link">Перейти к генератору</a>
                 </div>
                 
-                <!-- Генератор 7 -->
+                <!-- Генератор 8 -->
                 <div class="generator-card">
                     <div class="card-header">
                         <div class="card-icon">
@@ -390,7 +415,7 @@
                     <a href="https://www.lipsum.com/" target="_blank" class="card-link">Перейти к генератору</a>
                 </div>
                 
-                <!-- Генератор 8 -->
+                <!-- Генератор 9 -->
                 <div class="generator-card">
                     <div class="card-header">
                         <div class="card-icon">
@@ -404,7 +429,7 @@
                     <a href="https://www.craiyon.com/" target="_blank" class="card-link">Перейти к генератору</a>
                 </div>
                 
-                <!-- Генератор 9 -->
+                <!-- Генератор 10 -->
                 <div class="generator-card">
                     <div class="card-header">
                         <div class="card-icon">
@@ -418,7 +443,7 @@
                     <a href="https://www.chartjs.org/" target="_blank" class="card-link">Перейти к генератору</a>
                 </div>
                 
-                <!-- Генератор 10 -->
+                <!-- Генератор 11 -->
                 <div class="generator-card">
                     <div class="card-header">
                         <div class="card-icon">
@@ -432,7 +457,7 @@
                     <a href="https://cssgenerator.org/" target="_blank" class="card-link">Перейти к генератору</a>
                 </div>
                 
-                <!-- Генератор 11 -->
+                <!-- Генератор 12 -->
                 <div class="generator-card">
                     <div class="card-header">
                         <div class="card-icon">
@@ -446,7 +471,7 @@
                     <a href="https://www.magicpattern.design/tools/css-backgrounds" target="_blank" class="card-link">Перейти к генератору</a>
                 </div>
                 
-                <!-- Генератор 12 -->
+                <!-- Генератор 13 -->
                 <div class="generator-card">
                     <div class="card-header">
                         <div class="card-icon">
@@ -460,7 +485,7 @@
                     <a href="https://www.hubspot.com/email-signature-generator" target="_blank" class="card-link">Перейти к генератору</a>
                 </div>
                 
-                <!-- Генератор 13 -->
+                <!-- Генератор 14 -->
                 <div class="generator-card">
                     <div class="card-header">
                         <div class="card-icon">
@@ -474,7 +499,7 @@
                     <a href="https://www.aiva.ai/" target="_blank" class="card-link">Перейти к генератору</a>
                 </div>
                 
-                <!-- Генератор 14 -->
+                <!-- Генератор 15 -->
                 <div class="generator-card">
                     <div class="card-header">
                         <div class="card-icon">
@@ -488,7 +513,7 @@
                     <a href="https://avatarmaker.com/" target="_blank" class="card-link">Перейти к генератору</a>
                 </div>
                 
-                <!-- Генератор 15 -->
+                <!-- Генератор 16 -->
                 <div class="generator-card">
                     <div class="card-header">
                         <div class="card-icon">
@@ -544,6 +569,16 @@
             });
             
             githubCard.addEventListener('mouseleave', function() {
+                this.style.borderColor = 'rgba(255, 255, 255, 0.1)';
+            });
+            
+            // Специальный эффект для Google Sheets карточки
+            const googleSheetsCard = document.querySelector('.google-sheets-icon').closest('.generator-card');
+            googleSheetsCard.addEventListener('mouseenter', function() {
+                this.style.borderColor = 'rgba(52, 168, 83, 0.5)';
+            });
+            
+            googleSheetsCard.addEventListener('mouseleave', function() {
                 this.style.borderColor = 'rgba(255, 255, 255, 0.1)';
             });
             
