@@ -149,6 +149,11 @@
             background: linear-gradient(135deg, #4CAF50, #2196F3, #9C27B0);
         }
         
+        /* Особый стиль для Gemini Enterprise */
+        .gemini-icon {
+            background: linear-gradient(135deg, #4285F4, #34A853, #FBBC05, #EA4335);
+        }
+        
         .card-title {
             font-size: 1.4rem;
             font-weight: 600;
@@ -194,6 +199,11 @@
         /* Особый стиль для ссылки JSitor */
         .jsitor-link {
             background: linear-gradient(90deg, #4CAF50, #2196F3);
+        }
+        
+        /* Особый стиль для ссылки Gemini Enterprise */
+        .gemini-link {
+            background: linear-gradient(90deg, #4285F4, #34A853);
         }
         
         .card-link:hover {
@@ -287,6 +297,7 @@
         .generator-card:nth-child(14) { animation-delay: 1.4s; }
         .generator-card:nth-child(15) { animation-delay: 1.5s; }
         .generator-card:nth-child(16) { animation-delay: 1.6s; }
+        .generator-card:nth-child(17) { animation-delay: 1.7s; }
     </style>
 </head>
 <body>
@@ -300,7 +311,7 @@
         <!-- Секция с генераторами -->
         <section class="generators-section">
             <h2 class="section-title">Коллекция генераторов</h2>
-            <div class="counter">Всего генераторов: <span>16</span></div>
+            <div class="counter">Всего генераторов: <span>17</span></div>
             
             <div class="generators-grid">
                 <!-- Генератор 1 - GitHub -->
@@ -359,7 +370,21 @@
                     <a href="https://jsitor.com/" target="_blank" class="card-link jsitor-link">Перейти к JSitor</a>
                 </div>
                 
-                <!-- Генератор 5 -->
+                <!-- Генератор 5 - Gemini Enterprise -->
+                <div class="generator-card">
+                    <div class="card-header">
+                        <div class="card-icon gemini-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3 class="card-title">Gemini Enterprise</h3>
+                    </div>
+                    <div class="card-body">
+                        <p>Gemini Enterprise — это передовая платформа, созданная для того, чтобы предоставить возможности искусственного интеллекта Google каждому сотруднику для выполнения самых разных рабочих процессов.</p>
+                    </div>
+                    <a href="https://business.gemini.google/home/cid/5eeafb71-b513-4256-87fa-8a716b220be6/r/session/6424570665772282497?csesidx=947990200" target="_blank" class="card-link gemini-link">Перейти к Gemini Enterprise</a>
+                </div>
+                
+                <!-- Генератор 6 -->
                 <div class="generator-card">
                     <div class="card-header">
                         <div class="card-icon">
@@ -373,7 +398,7 @@
                     <a href="https://coolors.co/" target="_blank" class="card-link">Перейти к генератору</a>
                 </div>
                 
-                <!-- Генератор 6 -->
+                <!-- Генератор 7 -->
                 <div class="generator-card">
                     <div class="card-header">
                         <div class="card-icon">
@@ -387,7 +412,7 @@
                     <a href="https://www.qr-code-generator.com/" target="_blank" class="card-link">Перейти к генератору</a>
                 </div>
                 
-                <!-- Генератор 7 -->
+                <!-- Генератор 8 -->
                 <div class="generator-card">
                     <div class="card-header">
                         <div class="card-icon">
@@ -401,7 +426,7 @@
                     <a href="https://www.lastpass.com/features/password-generator" target="_blank" class="card-link">Перейти к генератору</a>
                 </div>
                 
-                <!-- Генератор 8 -->
+                <!-- Генератор 9 -->
                 <div class="generator-card">
                     <div class="card-header">
                         <div class="card-icon">
@@ -415,7 +440,7 @@
                     <a href="https://www.lipsum.com/" target="_blank" class="card-link">Перейти к генератору</a>
                 </div>
                 
-                <!-- Генератор 9 -->
+                <!-- Генератор 10 -->
                 <div class="generator-card">
                     <div class="card-header">
                         <div class="card-icon">
@@ -429,7 +454,7 @@
                     <a href="https://www.craiyon.com/" target="_blank" class="card-link">Перейти к генератору</a>
                 </div>
                 
-                <!-- Генератор 10 -->
+                <!-- Генератор 11 -->
                 <div class="generator-card">
                     <div class="card-header">
                         <div class="card-icon">
@@ -443,7 +468,7 @@
                     <a href="https://www.chartjs.org/" target="_blank" class="card-link">Перейти к генератору</a>
                 </div>
                 
-                <!-- Генератор 11 -->
+                <!-- Генератор 12 -->
                 <div class="generator-card">
                     <div class="card-header">
                         <div class="card-icon">
@@ -457,7 +482,7 @@
                     <a href="https://cssgenerator.org/" target="_blank" class="card-link">Перейти к генератору</a>
                 </div>
                 
-                <!-- Генератор 12 -->
+                <!-- Генератор 13 -->
                 <div class="generator-card">
                     <div class="card-header">
                         <div class="card-icon">
@@ -471,7 +496,7 @@
                     <a href="https://www.magicpattern.design/tools/css-backgrounds" target="_blank" class="card-link">Перейти к генератору</a>
                 </div>
                 
-                <!-- Генератор 13 -->
+                <!-- Генератор 14 -->
                 <div class="generator-card">
                     <div class="card-header">
                         <div class="card-icon">
@@ -485,7 +510,7 @@
                     <a href="https://www.hubspot.com/email-signature-generator" target="_blank" class="card-link">Перейти к генератору</a>
                 </div>
                 
-                <!-- Генератор 14 -->
+                <!-- Генератор 15 -->
                 <div class="generator-card">
                     <div class="card-header">
                         <div class="card-icon">
@@ -499,7 +524,7 @@
                     <a href="https://www.aiva.ai/" target="_blank" class="card-link">Перейти к генератору</a>
                 </div>
                 
-                <!-- Генератор 15 -->
+                <!-- Генератор 16 -->
                 <div class="generator-card">
                     <div class="card-header">
                         <div class="card-icon">
@@ -513,7 +538,7 @@
                     <a href="https://avatarmaker.com/" target="_blank" class="card-link">Перейти к генератору</a>
                 </div>
                 
-                <!-- Генератор 16 -->
+                <!-- Генератор 17 -->
                 <div class="generator-card">
                     <div class="card-header">
                         <div class="card-icon">
@@ -589,6 +614,16 @@
             });
             
             jsitorCard.addEventListener('mouseleave', function() {
+                this.style.borderColor = 'rgba(255, 255, 255, 0.1)';
+            });
+            
+            // Специальный эффект для Gemini Enterprise карточки
+            const geminiCard = document.querySelector('.gemini-icon').closest('.generator-card');
+            geminiCard.addEventListener('mouseenter', function() {
+                this.style.borderColor = 'rgba(66, 133, 244, 0.5)';
+            });
+            
+            geminiCard.addEventListener('mouseleave', function() {
                 this.style.borderColor = 'rgba(255, 255, 255, 0.1)';
             });
         });
