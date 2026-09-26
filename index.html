@@ -12,20 +12,20 @@
             box-sizing: border-box;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        
+
         body {
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-            color: #fff;
+            background: linear-gradient(135deg, #0f1020 0%, #1b1f3b 45%, #2a1f3d 100%);
+            color: #f2f3ff;
             min-height: 100vh;
             padding-bottom: 40px;
         }
-        
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
         }
-        
+
         /* Заголовок сайта */
         .header {
             text-align: center;
@@ -33,40 +33,40 @@
             position: relative;
             overflow: hidden;
         }
-        
+
         .header h1 {
             font-size: 3.5rem;
             margin-bottom: 10px;
-            background: linear-gradient(90deg, #00dbde, #fc00ff);
+            background: linear-gradient(90deg, #7ef9ff, #b388ff, #ff7ad9);
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
-            text-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            text-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
             animation: titleGlow 3s ease-in-out infinite alternate;
         }
-        
+
         @keyframes titleGlow {
             from {
-                text-shadow: 0 0 10px rgba(0, 219, 222, 0.5);
+                text-shadow: 0 0 10px rgba(126, 249, 255, 0.45);
             }
             to {
-                text-shadow: 0 0 20px rgba(252, 0, 255, 0.7), 0 0 30px rgba(252, 0, 255, 0.4);
+                text-shadow: 0 0 22px rgba(179, 136, 255, 0.65), 0 0 34px rgba(255, 122, 217, 0.35);
             }
         }
-        
+
         .header p {
             font-size: 1.2rem;
-            color: #a0a0c0;
+            color: #c3c7e6;
             max-width: 700px;
             margin: 0 auto;
             line-height: 1.6;
         }
-        
+
         /* Карточки генераторов */
         .generators-section {
             padding: 20px;
         }
-        
+
         .section-title {
             text-align: center;
             font-size: 2.2rem;
@@ -75,205 +75,231 @@
             position: relative;
             padding-bottom: 15px;
         }
-        
+
         .section-title:after {
             content: '';
             position: absolute;
             width: 100px;
             height: 4px;
-            background: linear-gradient(90deg, #00dbde, #fc00ff);
+            background: linear-gradient(90deg, #7ef9ff, #b388ff, #ff7ad9);
             bottom: 0;
             left: 50%;
             transform: translateX(-50%);
             border-radius: 2px;
         }
-        
+
         .generators-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 25px;
         }
-        
+
         .generator-card {
-            background: rgba(30, 30, 60, 0.7);
+            background: rgba(24, 28, 55, 0.78);
             border-radius: 15px;
             overflow: hidden;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.28);
             transition: all 0.3s ease;
             backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.08);
         }
-        
+
         .generator-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
-            border-color: rgba(0, 219, 222, 0.3);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.45);
+            border-color: rgba(126, 249, 255, 0.35);
         }
-        
+
         .card-header {
             padding: 25px 25px 15px;
             display: flex;
             align-items: center;
             gap: 15px;
         }
-        
+
         .card-icon {
             width: 50px;
             height: 50px;
-            background: linear-gradient(135deg, #00dbde, #fc00ff);
+            background: linear-gradient(135deg, #7ef9ff, #b388ff, #ff7ad9);
             border-radius: 10px;
             display: flex;
             align-items: center;
             justify-content: center;
             font-size: 1.5rem;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+            color: #0f1020;
         }
-        
+
         /* Особый стиль для GitHub */
         .github-icon {
-            background: linear-gradient(135deg, #333, #6e5494, #4078c0);
+            background: linear-gradient(135deg, #2f2f2f, #6e5494, #4078c0);
+            color: #fff;
         }
-        
+
         /* Особый стиль для Google Sheets */
         .google-sheets-icon {
             background: linear-gradient(135deg, #34A853, #0F9D58, #1E8E3E);
+            color: #fff;
         }
-        
+
         /* Особый стиль для Figma */
         .figma-icon {
             background: linear-gradient(135deg, #F24E1E, #A259FF, #1ABCFE, #0ACF83);
+            color: #fff;
         }
-        
+
         /* Особый стиль для JSitor */
         .jsitor-icon {
             background: linear-gradient(135deg, #4CAF50, #2196F3, #9C27B0);
+            color: #fff;
         }
-        
+
         /* Особый стиль для Gemini Enterprise */
         .gemini-icon {
             background: linear-gradient(135deg, #4285F4, #34A853, #FBBC05, #EA4335);
+            color: #fff;
         }
-        
+
         /* Особый стиль для Генератора предметов */
         .items-icon {
             background: linear-gradient(135deg, #FF6B6B, #FF8E53, #FFD166);
+            color: #2a1f3d;
         }
-        
+
+        /* Особый стиль для RUINS LIBRARY */
+        .ruins-icon {
+            background: linear-gradient(135deg, #5d4037, #8d6e63, #bcaaa4);
+            color: #fff;
+        }
+
         .card-title {
             font-size: 1.4rem;
             font-weight: 600;
             color: #ffffff;
         }
-        
+
         .card-body {
             padding: 0 25px 20px;
-            color: #b0b0d0;
+            color: #c3c7e6;
             line-height: 1.5;
             font-size: 0.95rem;
         }
-        
+
         .card-link {
             display: block;
             margin: 0 25px 25px;
             padding: 12px 20px;
-            background: linear-gradient(90deg, #00dbde, #fc00ff);
-            color: white;
+            background: linear-gradient(90deg, #7ef9ff, #b388ff, #ff7ad9);
+            color: #0f1020;
             text-align: center;
             text-decoration: none;
             border-radius: 8px;
             font-weight: 600;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
         }
-        
+
         /* Особый стиль для ссылки GitHub */
         .github-link {
-            background: linear-gradient(90deg, #333, #6e5494);
+            background: linear-gradient(90deg, #2f2f2f, #6e5494);
+            color: #fff;
         }
-        
+
         /* Особый стиль для ссылки Google Sheets */
         .google-sheets-link {
             background: linear-gradient(90deg, #34A853, #0F9D58);
+            color: #fff;
         }
-        
+
         /* Особый стиль для ссылки Figma */
         .figma-link {
             background: linear-gradient(90deg, #F24E1E, #A259FF);
+            color: #fff;
         }
-        
+
         /* Особый стиль для ссылки JSitor */
         .jsitor-link {
             background: linear-gradient(90deg, #4CAF50, #2196F3);
+            color: #fff;
         }
-        
+
         /* Особый стиль для ссылки Gemini Enterprise */
         .gemini-link {
             background: linear-gradient(90deg, #4285F4, #34A853);
+            color: #fff;
         }
-        
+
         /* Особый стиль для ссылки Генератора предметов */
         .items-link {
             background: linear-gradient(90deg, #FF6B6B, #FF8E53);
+            color: #2a1f3d;
         }
-        
+
+        /* Особый стиль для ссылки RUINS LIBRARY */
+        .ruins-link {
+            background: linear-gradient(90deg, #5d4037, #8d6e63, #bcaaa4);
+            color: #fff;
+        }
+
         .card-link:hover {
             transform: translateY(-3px);
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.35);
+            filter: brightness(1.05);
         }
-        
+
         /* Футер */
         .footer {
             text-align: center;
             margin-top: 60px;
             padding-top: 30px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            color: #a0a0c0;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            color: #b8bdd9;
             font-size: 0.9rem;
         }
-        
+
         /* Счетчик генераторов */
         .counter {
             text-align: center;
             margin-top: 10px;
             font-size: 1.1rem;
-            color: #a0a0c0;
+            color: #b8bdd9;
         }
-        
+
         .counter span {
-            color: #00dbde;
+            color: #7ef9ff;
             font-weight: bold;
         }
-        
+
         /* Адаптивность */
         @media (max-width: 768px) {
             .header h1 {
                 font-size: 2.5rem;
             }
-            
+
             .generators-grid {
                 grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
                 gap: 20px;
             }
-            
+
             .section-title {
                 font-size: 1.8rem;
             }
         }
-        
+
         @media (max-width: 480px) {
             .header h1 {
                 font-size: 2rem;
             }
-            
+
             .header p {
                 font-size: 1rem;
             }
-            
+
             .generators-grid {
                 grid-template-columns: 1fr;
             }
         }
-        
+
         /* Анимация появления */
         @keyframes fadeInUp {
             from {
@@ -285,12 +311,12 @@
                 transform: translateY(0);
             }
         }
-        
+
         .generator-card {
             animation: fadeInUp 0.5s ease forwards;
             opacity: 0;
         }
-        
+
         .generator-card:nth-child(1) { animation-delay: 0.1s; }
         .generator-card:nth-child(2) { animation-delay: 0.2s; }
         .generator-card:nth-child(3) { animation-delay: 0.3s; }
@@ -309,6 +335,7 @@
         .generator-card:nth-child(16) { animation-delay: 1.6s; }
         .generator-card:nth-child(17) { animation-delay: 1.7s; }
         .generator-card:nth-child(18) { animation-delay: 1.8s; }
+        .generator-card:nth-child(19) { animation-delay: 1.9s; }
     </style>
 </head>
 <body>
@@ -318,12 +345,12 @@
             <h1>Мой дипломный сайт</h1>
             <p>Коллекция полезных онлайн-генераторов для дизайна, программирования и контента. Все инструменты собраны в одном месте для вашего удобства.</p>
         </header>
-        
+
         <!-- Секция с генераторами -->
         <section class="generators-section">
             <h2 class="section-title">Коллекция генераторов</h2>
-            <div class="counter">Всего генераторов: <span>18</span></div>
-            
+            <div class="counter">Всего генераторов: <span>19</span></div>
+
             <div class="generators-grid">
                 <!-- Генератор 1 - GitHub -->
                 <div class="generator-card">
@@ -334,11 +361,11 @@
                         <h3 class="card-title">GitHub - Metro</h3>
                     </div>
                     <div class="card-body">
-                        <p>Мой дипломный проект "Universe Metro" размещенный на GitHub .</p>
+                        <p>Мой дипломный проект "Universe Metro" размещенный на GitHub.</p>
                     </div>
                     <a href="https://cel909321-coder.github.io/metro/" target="_blank" class="card-link github-link">Перейти к проекту на GitHub</a>
                 </div>
-                
+
                 <!-- Генератор 2 - Google Sheets -->
                 <div class="generator-card">
                     <div class="card-header">
@@ -352,7 +379,7 @@
                     </div>
                     <a href="https://docs.google.com/spreadsheets/d/1wktvd4A3WtM7JeePFOZCJmEeG-5n0rUIzj-XD9j0vmM/edit?usp=sharing" target="_blank" class="card-link google-sheets-link">Перейти к таблице</a>
                 </div>
-                
+
                 <!-- Генератор 3 - FIGMA -->
                 <div class="generator-card">
                     <div class="card-header">
@@ -366,7 +393,7 @@
                     </div>
                     <a href="https://www.figma.com/" target="_blank" class="card-link figma-link">Перейти к Figma</a>
                 </div>
-                
+
                 <!-- Генератор 4 - JSitor -->
                 <div class="generator-card">
                     <div class="card-header">
@@ -380,7 +407,7 @@
                     </div>
                     <a href="https://jsitor.com/" target="_blank" class="card-link jsitor-link">Перейти к JSitor</a>
                 </div>
-                
+
                 <!-- Генератор 5 - Gemini Enterprise -->
                 <div class="generator-card">
                     <div class="card-header">
@@ -394,7 +421,7 @@
                     </div>
                     <a href="https://business.gemini.google/home/cid/5eeafb71-b513-4256-87fa-8a716b220be6/r/session/6424570665772282497?csesidx=947990200" target="_blank" class="card-link gemini-link">Перейти к Gemini Enterprise</a>
                 </div>
-                
+
                 <!-- Генератор 6 - Генератор предметов -->
                 <div class="generator-card">
                     <div class="card-header">
@@ -408,7 +435,7 @@
                     </div>
                     <a href="https://randomall.ru/custom/gen/476?ysclid=ml3f01h5wj625542458" target="_blank" class="card-link items-link">Перейти к генератору</a>
                 </div>
-                
+
                 <!-- Генератор 7 -->
                 <div class="generator-card">
                     <div class="card-header">
@@ -422,7 +449,7 @@
                     </div>
                     <a href="https://coolors.co/" target="_blank" class="card-link">Перейти к генератору</a>
                 </div>
-                
+
                 <!-- Генератор 8 -->
                 <div class="generator-card">
                     <div class="card-header">
@@ -436,7 +463,7 @@
                     </div>
                     <a href="https://www.qr-code-generator.com/" target="_blank" class="card-link">Перейти к генератору</a>
                 </div>
-                
+
                 <!-- Генератор 9 -->
                 <div class="generator-card">
                     <div class="card-header">
@@ -450,7 +477,7 @@
                     </div>
                     <a href="https://www.lastpass.com/features/password-generator" target="_blank" class="card-link">Перейти к генератору</a>
                 </div>
-                
+
                 <!-- Генератор 10 -->
                 <div class="generator-card">
                     <div class="card-header">
@@ -464,7 +491,7 @@
                     </div>
                     <a href="https://www.lipsum.com/" target="_blank" class="card-link">Перейти к генератору</a>
                 </div>
-                
+
                 <!-- Генератор 11 -->
                 <div class="generator-card">
                     <div class="card-header">
@@ -478,7 +505,7 @@
                     </div>
                     <a href="https://www.craiyon.com/" target="_blank" class="card-link">Перейти к генератору</a>
                 </div>
-                
+
                 <!-- Генератор 12 -->
                 <div class="generator-card">
                     <div class="card-header">
@@ -492,7 +519,7 @@
                     </div>
                     <a href="https://www.chartjs.org/" target="_blank" class="card-link">Перейти к генератору</a>
                 </div>
-                
+
                 <!-- Генератор 13 -->
                 <div class="generator-card">
                     <div class="card-header">
@@ -506,7 +533,7 @@
                     </div>
                     <a href="https://cssgenerator.org/" target="_blank" class="card-link">Перейти к генератору</a>
                 </div>
-                
+
                 <!-- Генератор 14 -->
                 <div class="generator-card">
                     <div class="card-header">
@@ -520,7 +547,7 @@
                     </div>
                     <a href="https://www.magicpattern.design/tools/css-backgrounds" target="_blank" class="card-link">Перейти к генератору</a>
                 </div>
-                
+
                 <!-- Генератор 15 -->
                 <div class="generator-card">
                     <div class="card-header">
@@ -534,7 +561,7 @@
                     </div>
                     <a href="https://www.hubspot.com/email-signature-generator" target="_blank" class="card-link">Перейти к генератору</a>
                 </div>
-                
+
                 <!-- Генератор 16 -->
                 <div class="generator-card">
                     <div class="card-header">
@@ -548,7 +575,7 @@
                     </div>
                     <a href="https://www.aiva.ai/" target="_blank" class="card-link">Перейти к генератору</a>
                 </div>
-                
+
                 <!-- Генератор 17 -->
                 <div class="generator-card">
                     <div class="card-header">
@@ -562,7 +589,7 @@
                     </div>
                     <a href="https://avatarmaker.com/" target="_blank" class="card-link">Перейти к генератору</a>
                 </div>
-                
+
                 <!-- Генератор 18 -->
                 <div class="generator-card">
                     <div class="card-header">
@@ -576,9 +603,33 @@
                     </div>
                     <a href="https://www.canva.com/certificate-templates/" target="_blank" class="card-link">Перейти к генератору</a>
                 </div>
+
+                <!-- Генератор 19 - RUINS LIBRARY -->
+                <div class="generator-card">
+                    <div class="card-header">
+                        <div class="card-icon ruins-icon">
+                            <i class="fas fa-book-skull"></i>
+                        </div>
+                        <h3 class="card-title">RUINS LIBRARY</h3>
+                    </div>
+                    <div class="card-body">
+                        <p><strong>RUINS LIBRARY</strong> — твоя библиотека на руинах цивилизации.</p>
+                        <p>Мы собираем самые жесткие и атмосферные книги про падение привычного мира: вирусные эпидемии, апокалипсисы и истории выживших, оказавшихся на грани выживания.</p>
+                        <p>В нашем каталоге:</p>
+                        <p>— «КОШМАР ЛУИСВИЛЛЯ» — вирус вырывается на свободу, и группа школьников пытается выжить на улицах паникующего мегаполиса и за его пределами.</p>
+                        <p>— «СИБИРЬ» — ядерная война, группировки, охватившие глухой тихий городок посреди тайги.</p>
+                        <p>— И другие эксклюзивные истории от автора, которые не любят мрачные реалистичные сюжеты.</p>
+                        <p>Особенности RUINS LIBRARY:</p>
+                        <p>— Удобный ридер без рекламы и лишнего мусора.</p>
+                        <p>— Регулярный выход новых глав.</p>
+                        <p>— Сообщество любителей качественного пост-апокалипсиса.</p>
+                        <p>Заходи и выбирай книгу. Добро пожаловать в RUINS LIBRARY.</p>
+                    </div>
+                    <a href="https://cel909321-coder.github.io/book/" target="_blank" class="card-link ruins-link">Перейти в RUINS LIBRARY</a>
+                </div>
             </div>
         </section>
-        
+
         <!-- Футер -->
         <footer class="footer">
             <p>Дипломный проект Ученика НАДИП &copy; 2026. Все генераторы взяты из открытых источников.</p>
@@ -591,75 +642,85 @@
         document.addEventListener('DOMContentLoaded', function() {
             // Добавляем класс для активации анимации
             const cards = document.querySelectorAll('.generator-card');
-            
+
             // Анимация появления карточек с задержкой
             cards.forEach((card, index) => {
                 card.style.animationDelay = `${0.1 + index * 0.1}s`;
             });
-            
+
             // Эффект при наведении на заголовок
             const title = document.querySelector('.header h1');
             title.addEventListener('mouseenter', function() {
                 this.style.transform = 'scale(1.05)';
                 this.style.transition = 'transform 0.3s ease';
             });
-            
+
             title.addEventListener('mouseleave', function() {
                 this.style.transform = 'scale(1)';
             });
-            
+
             // Обновляем счетчик при загрузке
             const counter = document.querySelector('.counter span');
             counter.textContent = cards.length;
-            
+
             // Специальный эффект для GitHub карточки
             const githubCard = document.querySelector('.github-icon').closest('.generator-card');
             githubCard.addEventListener('mouseenter', function() {
                 this.style.borderColor = 'rgba(110, 84, 148, 0.5)';
             });
-            
+
             githubCard.addEventListener('mouseleave', function() {
-                this.style.borderColor = 'rgba(255, 255, 255, 0.1)';
+                this.style.borderColor = 'rgba(255, 255, 255, 0.08)';
             });
-            
+
             // Специальный эффект для Google Sheets карточки
             const googleSheetsCard = document.querySelector('.google-sheets-icon').closest('.generator-card');
             googleSheetsCard.addEventListener('mouseenter', function() {
                 this.style.borderColor = 'rgba(52, 168, 83, 0.5)';
             });
-            
+
             googleSheetsCard.addEventListener('mouseleave', function() {
-                this.style.borderColor = 'rgba(255, 255, 255, 0.1)';
+                this.style.borderColor = 'rgba(255, 255, 255, 0.08)';
             });
-            
+
             // Специальный эффект для JSitor карточки
             const jsitorCard = document.querySelector('.jsitor-icon').closest('.generator-card');
             jsitorCard.addEventListener('mouseenter', function() {
                 this.style.borderColor = 'rgba(76, 175, 80, 0.5)';
             });
-            
+
             jsitorCard.addEventListener('mouseleave', function() {
-                this.style.borderColor = 'rgba(255, 255, 255, 0.1)';
+                this.style.borderColor = 'rgba(255, 255, 255, 0.08)';
             });
-            
+
             // Специальный эффект для Gemini Enterprise карточки
             const geminiCard = document.querySelector('.gemini-icon').closest('.generator-card');
             geminiCard.addEventListener('mouseenter', function() {
                 this.style.borderColor = 'rgba(66, 133, 244, 0.5)';
             });
-            
+
             geminiCard.addEventListener('mouseleave', function() {
-                this.style.borderColor = 'rgba(255, 255, 255, 0.1)';
+                this.style.borderColor = 'rgba(255, 255, 255, 0.08)';
             });
-            
+
             // Специальный эффект для Генератора предметов карточки
             const itemsCard = document.querySelector('.items-icon').closest('.generator-card');
             itemsCard.addEventListener('mouseenter', function() {
                 this.style.borderColor = 'rgba(255, 107, 107, 0.5)';
             });
-            
+
             itemsCard.addEventListener('mouseleave', function() {
-                this.style.borderColor = 'rgba(255, 255, 255, 0.1)';
+                this.style.borderColor = 'rgba(255, 255, 255, 0.08)';
+            });
+
+            // Специальный эффект для RUINS LIBRARY карточки
+            const ruinsCard = document.querySelector('.ruins-icon').closest('.generator-card');
+            ruinsCard.addEventListener('mouseenter', function() {
+                this.style.borderColor = 'rgba(141, 110, 99, 0.6)';
+            });
+
+            ruinsCard.addEventListener('mouseleave', function() {
+                this.style.borderColor = 'rgba(255, 255, 255, 0.08)';
             });
         });
     </script>
